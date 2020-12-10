@@ -1,1 +1,1 @@
-# Simple Java EE Web Appication
+# Simple Java EE Web Application
