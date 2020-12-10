@@ -1,4 +1,7 @@
-package com.blogapp.controller.command;
+package com.blogapp.controller;
+
+import com.blogapp.controller.command.Command;
+import com.blogapp.controller.command.CommandProvider;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
