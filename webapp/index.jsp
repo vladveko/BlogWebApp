@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
@@ -5,9 +6,16 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "Hello World!" %>
-</h1>
-<br/>
-<a href="#">Hello Servlet</a>
+<header>
+    <jsp:include page="WEB-INF/jsp/header.jsp"/>
+</header>
+
+<main>
+
+</main>
+
+<footer>
+    <jsp:include page="WEB-INF/jsp/footer.jsp"/>
+</footer>
 </body>
 </html>
