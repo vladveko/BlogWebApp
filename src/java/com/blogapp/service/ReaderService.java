@@ -1,9 +1,10 @@
 package com.blogapp.service;
 
 import com.blogapp.bean.User;
+import com.blogapp.service.exception.ServiceException;
 
 public interface ReaderService {
-    void signIn(String login, String password);
+    User signIn(String login, byte[] password) throws ServiceException;
     void signOut(String login);
     void registration(User user);
 
