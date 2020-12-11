@@ -1,8 +1,8 @@
 package com.blogapp.service;
 
-import com.blogapp.bean.Artical;
+import com.blogapp.bean.Article;
 
 public interface BlogService {
-    void addNewArtical(Artical artical);
-    void addEditedArtical(Artical artical);
+    void addNewArtical(Article article);
+    void addEditedArtical(Article article);
 }

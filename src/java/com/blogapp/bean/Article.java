@@ -1,6 +1,6 @@
 package com.blogapp.bean;
 
-public class Artical {
+public class Article {
 
     private int id;
     private String author;
@@ -8,9 +8,9 @@ public class Artical {
     private String subheading;
     private String body;
 
-    public Artical() {}
+    public Article() {}
 
-    public Artical(int id, String author, String heading, String subheading, String body){
+    public Article(int id, String author, String heading, String subheading, String body){
         this.id = id;
         this.author = author;
         this.heading = heading;

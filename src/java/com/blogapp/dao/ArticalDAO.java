@@ -1,9 +1,9 @@
 package com.blogapp.dao;
 
-import com.blogapp.bean.Artical;
+import com.blogapp.bean.Article;
 
 public interface ArticalDAO {
-    void addArtical(Artical artical);
+    void addArtical(Article article);
     void deleteArtical(long idArtical);
-    void delete(Artical artical);
+    void delete(Article article);
 }

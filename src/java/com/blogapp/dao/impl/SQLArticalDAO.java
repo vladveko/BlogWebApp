@@ -1,12 +1,12 @@
 package com.blogapp.dao.impl;
 
-import com.blogapp.bean.Artical;
+import com.blogapp.bean.Article;
 import com.blogapp.dao.ArticalDAO;
 
 public class SQLArticalDAO implements ArticalDAO{
 
     @Override
-    public void addArtical(Artical artical) {
+    public void addArtical(Article article) {
 
     }
 
@@ -16,7 +16,7 @@ public class SQLArticalDAO implements ArticalDAO{
     }
 
     @Override
-    public void delete(Artical artical) {
+    public void delete(Article article) {
 
     }
 }
