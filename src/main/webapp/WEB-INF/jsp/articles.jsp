@@ -1,16 +1,20 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Влад
-  Date: 11.12.2020
-  Time: 18:28
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Blog</title>
 </head>
-<body>
+<header>
+    <jsp:include page="header.jsp"/>
+</header>
 
+<body>
+    <c:forEach var="header" items="${headers}">
+        <a href="Controller/com=getarticle&articleID=${header.id}">${header.header}</a>
+    </c:forEach>
 </body>
+
+<footer>
+    <jsp:include page="footer.jsp"/>
+</footer>
 </html>

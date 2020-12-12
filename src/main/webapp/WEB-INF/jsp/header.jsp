@@ -3,15 +3,21 @@
 <html>
 <body>
     <div class="nav">
-        <a href="#">Articles</a>
+        <a href="Controller?com=gotoarticles">Articles</a>
     </div>
+
     <c:if test="${user != null}">
-    <div>
+    <div class="btn">
         <button>Sign Out</button>
     </div>
     </c:if>
-    <div>
-        <button>Sign In</button>
+
+    <div class="btn">
+        <button onclick="location.href='Controller?com=gotologin'">Sign In</button>
+    </div>
+
+    <div class="btn">
+        <button onclick="location.href='Controller?com=gotoregistration'">Sign Up</button>
     </div>
 </body>
 </html>

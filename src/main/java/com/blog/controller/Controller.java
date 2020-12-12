@@ -13,7 +13,7 @@ import java.io.IOException;
 @WebServlet(name="Controller")
 public class Controller extends HttpServlet {
 
-    private static final String REQUEST_PARAMETER_COMMAND = "command";
+    private static final String REQUEST_PARAMETER_COMMAND = "com";
     private static final String LAST_REQUEST_PARAM = "lastRequest";
 
     private final CommandProvider provider = new CommandProvider();
