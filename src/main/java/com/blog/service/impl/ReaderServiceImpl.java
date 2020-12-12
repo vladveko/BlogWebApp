@@ -14,7 +14,7 @@ public class ReaderServiceImpl implements ReaderService {
     @Override
     public User signIn(String login, byte[] password) throws ServiceException {
 
-        if(login.equals("") || password.equals(""))
+        if(login.equals("") || password.length == 0)
             return null;
 
         DAOProvider daoProvider = DAOProvider.getInstance();
@@ -26,11 +26,6 @@ public class ReaderServiceImpl implements ReaderService {
         catch (DAOException e) {
             throw new ServiceException("Error while signing in", e);
         }
-    }
-
-    @Override
-    public boolean signOut(String login) throws ServiceException {
-        return true;
     }
 
     @Override
