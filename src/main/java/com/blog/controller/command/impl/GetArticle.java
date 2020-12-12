@@ -26,7 +26,7 @@ public class GetArticle implements Command {
         BlogService blogService = serviceProvider.getBlogService();
 
         try{
-            long articleID = Integer.parseInt(request.getParameter(ARTICLE_ID));
+            int articleID = Integer.parseInt(request.getParameter(ARTICLE_ID));
             Article article = blogService.getArticle(articleID);
 
             session.setAttribute("article", article);

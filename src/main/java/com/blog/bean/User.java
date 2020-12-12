@@ -6,6 +6,7 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
+    private String login;
     private String userRole;
 
     public User() {}
@@ -16,6 +17,10 @@ public class User {
         this.lastName = lastName;
         this.email = email;
         this.userRole = userRole;
+    }
+
+    public String getLogin() {
+        return login;
     }
 
     public int getId(){
@@ -66,5 +71,9 @@ public class User {
     public void setUserRole(String userRole){
         this.userRole = userRole;
 
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
     }
 }

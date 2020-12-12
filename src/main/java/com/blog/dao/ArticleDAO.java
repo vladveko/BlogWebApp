@@ -8,9 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public interface ArticleDAO {
-    void addArtical(Article article) throws DAOException;
-    void deleteArtical(long idArtical) throws DAOException;
-    void delete(Article article) throws DAOException;
+    void addArticle(Article article) throws DAOException;
+    void deleteArticle(int idArtical) throws DAOException;
     ArrayList<ArticleInformation> getHeaders() throws DAOException;
-    Article getArticle(long id) throws DAOException;
+    Article getArticle(int id) throws DAOException;
 }

@@ -10,5 +10,5 @@ public interface BlogService {
     void addNewArticle(Article article) throws ServiceException;
     void addEditedArticle(Article article) throws ServiceException;
     ArrayList<ArticleInformation> getHeaders() throws ServiceException;
-    Article getArticle(long id) throws ServiceException;
+    Article getArticle(int id) throws ServiceException;
 }
