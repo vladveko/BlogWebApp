@@ -15,8 +15,8 @@ import java.io.IOException;
 public class GetArticle implements Command {
 
     private static final String ARTICLE_ID = "articleID";
-    private static final String REDIRECT = "WEB-INF/jsp/article";
-    private static final String REDIRECT_ERROR = "";
+    private static final String REDIRECT = "Controller?com=gotoarticle";
+    private static final String REDIRECT_ERROR = "Controller?com=gotoarticle&error=true";
 
     @Override
     public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
