@@ -37,7 +37,15 @@ public class BlogServiceImpl implements BlogService{
     }
 
     @Override
-    public Article getArticle(long id) {
-        return null;
+    public Article getArticle(long id) throws ServiceException{
+        DAOProvider daoProvider = DAOProvider.getInstance();
+        ArticleDAO articleDAO = daoProvider.getArticleDAO();
+
+        try{
+            return articleDAO.getArticle(id);
+        }
+        catch (DAOException ex){
+            throw new ServiceException("Error getting full article", ex);
+        }
     }
 }

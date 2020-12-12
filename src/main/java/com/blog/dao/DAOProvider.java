@@ -1,13 +1,13 @@
 package com.blog.dao;
 
 import com.blog.dao.impl.SQLUserDAO;
-import com.blog.dao.impl.SQLArticalDAO;
+import com.blog.dao.impl.SQLArticleDAO;
 
 public class DAOProvider {
     private static final DAOProvider instance = new DAOProvider();
 
     private final UserDAO userDAO = new SQLUserDAO();
-    private final ArticalDAO articalDAO = new SQLArticalDAO();
+    private final ArticleDAO articleDAO = new SQLArticleDAO();
 
     private DAOProvider() {};
 
@@ -17,6 +17,6 @@ public class DAOProvider {
 
     public UserDAO getUserDAO() { return userDAO; }
 
-    public ArticalDAO getArticalDAO() { return articalDAO; }
+    public ArticleDAO getArticleDAO() { return articleDAO; }
 
 }

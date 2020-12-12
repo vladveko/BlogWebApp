@@ -16,8 +16,8 @@ public class SignIn implements Command {
 
     private static final String REQUEST_PARAM_LOGIN = "login";
     private static final String REQUEST_PARAM_PASSWORD = "password";
-    private static final String REDIRECT_COMMAND_SUCCESS = "Controller?command=go_to_main";
-    private static final String REDIRECT_COMMAND_ERROR = "Controller?command=go_to_main&error=error";
+    private static final String REDIRECT_COMMAND_SUCCESS = "Controller?command=gotomain";
+    private static final String REDIRECT_COMMAND_ERROR = "Controller?command=gotomain&error=error";
     private static final String USER_SESSION_ATTR = "user";
 
     @Override
