@@ -3,7 +3,7 @@
 <html>
 <body>
     <div class="nav">
-        <a href="Controller?com=gotoarticles">Articles</a>
+        <a href="Controller?com=getallarticles">Articles</a>
     </div>
 
     <c:if test="${user != null}">
