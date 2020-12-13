@@ -9,7 +9,7 @@ public class User {
     private String login;
     private String userRole;
 
-    public User() {}
+    public User(int anInt, String string, String rsString, String s, String string1, String rsString1) {}
 
     public User(int id, String firstName, String lastName, String email, String userRole){
         this.id = id;
