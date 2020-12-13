@@ -13,4 +13,10 @@
         <servlet-name>Controller</servlet-name>
         <url-pattern>/Controller</url-pattern>
     </servlet-mapping>
+
+    <listener>
+        <listener-class>
+            com.blog.controller.ContextListener
+        </listener-class>
+    </listener>
 </web-app>
